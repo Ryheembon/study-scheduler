@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Scheduler</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Study Scheduler</h1>
+        <div class="quote-box">
+            <p id="quote" class="quote-text"></p>
+            <button id="newQuote" class="quote-btn">New Quote ✨</button>
+        </div>
+        
+        <div class="task-form">
+            <h2>Add New Task</h2>
+            <form id="taskForm">
+                <input type="text" id="title" placeholder="Task Title" required>
+                <textarea id="description" placeholder="Description"></textarea>
+                <input type="date" id="dueDate" required>
+                <select id="category" aria-label="Task Category">
+                    <option value="homework">Homework</option>
+                    <option value="notes">Notes</option>
+                    <option value="project">Project</option>
+                    <option value="exam">Exam</option>
+                </select>
+                <select id="priority" aria-label="Task Priority">
+                    <option value="low">Low Priority</option>
+                    <option value="medium">Medium Priority</option>
+                    <option value="high">High Priority</option>
+                </select>
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+
+        <div class="tasks-container">
+            <h2>Your Tasks</h2>
+            <div id="tasksList"></div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html> 
