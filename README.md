@@ -47,3 +47,10 @@ docker-compose up --build
 - MongoDB database included in Docker setup
 - Automatic container health checks
 - Volume persistence for database data
+
+## Security Note
+For production deployment:
+- Change all default credentials
+- Set up proper environment variables
+- Use secure database configuration
+- Enable HTTPS
